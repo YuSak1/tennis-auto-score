@@ -1,5 +1,6 @@
 import copy
 
+
 class Score:
 
     def __init__(self):
@@ -9,6 +10,7 @@ class Score:
         self.games = [0, 0]
         self.sets = [0, 0]
         self.previous_points = [0, 0]
+        self.server = 0
 
     def new_game(self) -> None:
         self.points = [0, 0]
