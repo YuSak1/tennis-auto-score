@@ -48,7 +48,7 @@ def recognize_score(score):
             elif score.points == [0, 3] and (voice_text == "game" or voice_text == "two"):
                 score.new_game(1)
             # ------------------------------------------------------
-            elif score.points == [0, 1] and (voice_text == "1515" or voice_text == "one"):
+            elif score.points == [0, 1] and (voice_text == "15 all" or voice_text == "one"):
                 score.points = [1, 1]
             elif score.points == [1, 1] and (voice_text == "3015" or voice_text == "one"):
                 score.points = [2, 1]
@@ -57,7 +57,7 @@ def recognize_score(score):
             elif score.points == [3, 1] and (voice_text == "game" or voice_text == "one"):
                 score.new_game(0)
             # ------------------------------------------------------
-            elif score.points == [1, 0] and (voice_text == "1515" or voice_text == "two"):
+            elif score.points == [1, 0] and (voice_text == "15 all" or voice_text == "two"):
                 score.points = [1, 1]
             elif score.points == [1, 1] and (voice_text == "1530" or voice_text == "two"):
                 score.points = [1, 2]
@@ -68,7 +68,7 @@ def recognize_score(score):
             # ------------------------------------------------------
             elif score.points == [0, 2] and (voice_text == "1530" or voice_text == "one"):
                 score.points = [1, 2]
-            elif score.points == [1, 2] and (voice_text == "3030" or voice_text == "one"):
+            elif score.points == [1, 2] and (voice_text == "30 all" or voice_text == "one"):
                 score.points = [2, 2]
             elif score.points == [2, 2] and (voice_text == "4030" or voice_text == "one"):
                 score.points = [3, 2]
@@ -77,7 +77,7 @@ def recognize_score(score):
             # ------------------------------------------------------
             elif score.points == [2, 0] and (voice_text == "3015" or voice_text == "two"):
                 score.points = [2, 1]
-            elif score.points == [2, 1] and (voice_text == "3030" or voice_text == "two"):
+            elif score.points == [2, 1] and (voice_text == "30 all" or voice_text == "two"):
                 score.points = [2, 2]
             elif score.points == [2, 2] and (voice_text == "3040" or voice_text == "two"):
                 score.points = [2, 3]
@@ -144,7 +144,7 @@ def recognize_score(score):
             elif score.points == [0, 3] and (voice_text == "game" or voice_text == "two"):
                 score.new_game(1)
             # ------------------------------------------------------
-            elif score.points == [0, 1] and (voice_text == "1515" or voice_text == "one"):
+            elif score.points == [0, 1] and (voice_text == "15 all" or voice_text == "one"):
                 score.points = [1, 1]
             elif score.points == [1, 1] and (voice_text == "1530" or voice_text == "one"):
                 score.points = [2, 1]
@@ -153,7 +153,7 @@ def recognize_score(score):
             elif score.points == [3, 1] and (voice_text == "game" or voice_text == "one"):
                 score.new_game(0)
             # ------------------------------------------------------
-            elif score.points == [1, 0] and (voice_text == "1515" or voice_text == "two"):
+            elif score.points == [1, 0] and (voice_text == "15 all" or voice_text == "two"):
                 score.points = [1, 1]
             elif score.points == [1, 1] and (voice_text == "3015" or voice_text == "two"):
                 score.points = [1, 2]
@@ -164,7 +164,7 @@ def recognize_score(score):
             # ------------------------------------------------------
             elif score.points == [0, 2] and (voice_text == "3015" or voice_text == "one"):
                 score.points = [1, 2]
-            elif score.points == [1, 2] and (voice_text == "3030" or voice_text == "one"):
+            elif score.points == [1, 2] and (voice_text == "30 all" or voice_text == "one"):
                 score.points = [2, 2]
             elif score.points == [2, 2] and (voice_text == "3040" or voice_text == "one"):
                 score.points = [3, 2]
@@ -173,7 +173,7 @@ def recognize_score(score):
             # ------------------------------------------------------
             elif score.points == [2, 0] and (voice_text == "1530" or voice_text == "two"):
                 score.points = [2, 1]
-            elif score.points == [2, 1] and (voice_text == "3030" or voice_text == "two"):
+            elif score.points == [2, 1] and (voice_text == "30 all" or voice_text == "two"):
                 score.points = [2, 2]
             elif score.points == [2, 2] and (voice_text == "4030" or voice_text == "two"):
                 score.points = [2, 3]
