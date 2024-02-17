@@ -3,7 +3,7 @@
 Tennis scoring app using speech recognition.
 
 ## Setting
-Microphone settin is required to detect voice.
+Device setting is required to detect voice with microphone.
 
 Windows
 
@@ -22,10 +22,10 @@ python main.py
 - Say "1" or "2" to select who is serving first.
 - Call the score after each point. e.g. 15-love, 40-30. Alternatively, you can say "1" or "2" for whoever won the point.
 - Say "Game" if a game is won.
-- Say "Cancel" to undo a call.
+- Say "Cancel" to undo a previous call.
 
 ## Future work
-### Scoring functions
+### Scoring features
 - Tie-breaker
-- Enable to select match format, e.g. 3-sets or 5-sets
+- Enable to select match format, e.g. 3-sets / 5-sets
 - Web app for better visualization
