@@ -4,6 +4,7 @@ import copy
 class Score:
 
     def __init__(self):
+        self.sets_to_win = 1
         self.points_text_ref = ('0', '15', '30', '40', 'Ad')
         self.points = [0, 0]
         self.points_text = ["00", "00"]
@@ -11,20 +12,42 @@ class Score:
         self.sets = [0, 0]
         self.previous_points = [0, 0]
         self.server = 0
+        self.previous_points = [0, 0]
+        self.previous_voice_text = ""
+        self.game_set = False
 
-    def new_game(self) -> None:
+    def new_game(self, game_won_by) -> None:
         self.points = [0, 0]
         self.points_text = ["00", "00"]
+        # Change server
+        if self.server == 0:
+            self.server = 1
+        else:
+            self.server = 0
 
-    def new_set(self) -> None:
+        if self.games[game_won_by] == 5:
+            self.new_set(game_won_by)
+        else:
+            self.games[game_won_by] += 1
+
+    def new_set(self, set_won_by) -> None:
+        self.points = [0, 0]
+        self.points_text = ["00", "00"]
         self.games = [0, 0]
-        self.new_game()
+
+        if self.sets[set_won_by] == self.sets_to_win-1:
+            print("Game set!")
+            self.game_set = True
+        else:
+            self.sets[set_won_by] += 1
 
     def new_match(self) -> None:
-        self.new_set()
-        self.new_game()
+        self.points = [0, 0]
+        self.points_text = ["00", "00"]
+        self.games = [0, 0]
         self.sets = [0, 0]
 
+    # Not used for voice_recognition_v2.py
     def increment_point(self, player) -> None:
         # undo the score
         if player == -1:

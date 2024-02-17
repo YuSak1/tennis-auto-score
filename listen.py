@@ -8,7 +8,7 @@ def listen_to_voice():
             voice = listener.listen(source)
             voice_text = listener.recognize_google(voice)
             # voice_text = listener.recognize_google(voice, language="ja-JP")
-            print(voice_text)
+            # print(voice_text)
             return voice_text
     except:
         return "error"

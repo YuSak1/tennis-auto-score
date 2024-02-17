@@ -18,24 +18,25 @@ def start_match() -> None:
             break
 
     score.new_match()
-    print("===================================================="
-          "\n          Player1       Player2",
-          "\nSet:       ", score.sets[0], "     -     ", score.sets[1],
-          "\nGame:      ", score.games[0], "     -     ", score.games[1],
-          "\nPoint:    ", score.points_text[0], "     -    ", score.points_text[1],
-          "\n====================================================")
+    # print("===================================================="
+    #       "\n          Player1       Player2",
+    #       "\nSet:       ", score.sets[0], "     -     ", score.sets[1],
+    #       "\nGame:      ", score.games[0], "     -     ", score.games[1],
+    #       "\nPoint:    ", score.points_text[0], "     -    ", score.points_text[1],
+    #       "\n====================================================")
     # print(score.point_player1, "-", score.point_player2)
 
-    while True:
+    while not score.game_set:
         # result = vr.recognize_score()
         # score.increment_point(result)
-        vr2.recognize_score(score)
         print("===================================================="
               "\n          Player1       Player2",
               "\nSet:       ", score.sets[0], "     -     ", score.sets[1],
               "\nGame:      ", score.games[0], "     -     ", score.games[1],
               "\nPoint:    ", score.points_text[0], "     -    ", score.points_text[1],
               "\n====================================================")
+
+        vr2.recognize_score(score)
 
 
 if __name__ == '__main__':
