@@ -13,9 +13,13 @@ https://shankhanilborthakur.medium.com/recording-system-audio-in-windows-10-usin
 
 ## Requirement
 Currently, Dockerfile does not work, so install the packages manually.
-- PyAudio
-- SpeechRecognition
-- pyttsx3
+```shell
+apt-get install libasound-dev libportaudio2 libportaudiocpp0 portaudio19-dev -y
+apt install espeak
+pip install PyAudio
+pip install SpeechRecognition
+pip install pyttsx3
+```
 
 ## Run
 
