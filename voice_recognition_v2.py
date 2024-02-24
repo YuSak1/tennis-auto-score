@@ -2,6 +2,7 @@ import speech_recognition as sr
 import sound
 import copy
 
+
 def listen_to_voice():
     listener = sr.Recognizer()
     try:
