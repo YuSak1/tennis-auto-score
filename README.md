@@ -11,6 +11,12 @@ Follow "Step 2 : Enable Stereo Mixer" in below article.
 
 https://shankhanilborthakur.medium.com/recording-system-audio-in-windows-10-using-pyaudio-1559f3e1b64f
 
+## Requirement
+Currently, Dockerfile does not work, so install the packages manually.
+- PyAudio
+- SpeechRecognition
+- pyttsx3
+
 ## Run
 
 ```shell
