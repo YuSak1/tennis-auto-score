@@ -34,8 +34,14 @@ python main.py
 - Say "Game" if a game is won.
 - Say "Cancel" to undo a previous call.
 
-## Future work
-### Scoring features
+## Future Work
+### Scoring Features
 - Tie-breaker
 - Enable to select match format, e.g. 3-sets / 5-sets
 - Web app for better visualization
+
+### Data Analysis
+- Collect data from matches
+- Analyze points
+- Analyze player's style
+- Visualize stats
